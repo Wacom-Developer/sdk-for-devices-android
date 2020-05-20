@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CDLSampleApp</string>
+    <string name="scanBtnText">Scan</string>
+    <string name="transferFilesBtnText">Transfer Files</string>
+    <string name="liveModeBtnText">Live Mode</string>
+</resources>
