@@ -1,4 +1,4 @@
-# CDL Android
+# Wacom Ink SDK for devices - Android
 
 ## Version 1.0.4
 

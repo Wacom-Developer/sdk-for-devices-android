@@ -8,26 +8,18 @@ To build and run the sample application you will need a device with Android 4.3 
 
 To test the application use a Wacom device such as a Bamboo Slate, Folio, Intuos Pro or PHU-111 Clipboard.
 
-## Download the WILL SDKs
+## Download the WILL SDK
 
-The sample application requires two SDKs from the website:
-* CDL for Android
-* WILL SDK for Ink
-
-
-Download the SDKs from https://developer.wacom.com/developer-dashboard
+Download the SDK from https://developer.wacom.com/developer-dashboard
 
 * login using your Wacom ID
 * Select **Downloads for devices**
-* Download **CDL for Android**
+* Download **Wacom Ink SDK for devices for Android**
 * Accept the End User License Agreement to use the SDK
-
-The downloaded Zip file for CDL for Android contains the SDK with documentation.
-The SDK files are contained in the folder 'Android-CDL-release' - CDL-X.X.X.aar and CDLCore-X.X.X.aar
 
 ## Download an Evaluation License
 
-A license is needed to use the CDL and a fully functional evaluation license is free to download as follows:
+A license is needed to use the SDK and a fully functional evaluation license is free to download as follows:
 
 * Navigate to https://developer.wacom.com/developer-dashboard
 * login using your Wacom ID
@@ -42,12 +34,12 @@ The license is supplied as a JWT text string in a text file. This will need to b
 
 ## Build the Sample Application
 
-* Clone this repository onto your computer e.g. to C:\CDL
+* Clone this repository onto your computer 
 * Open Android Studio
 * Either press "Open an Existing Android Studio Project" or click File > Open...
-* Navigate to will-sdk-for-devices-cdl-android-samples/WillDevicesSampleApp. Press Choose, or OK
+* Navigate to WillDevicesSampleApp. Press Choose, or OK
 * Wait for the Gradle execution to complete. You should see "app" appear as a build configuration
-* Add the downloaded SDKs as modules to the project. You will need **will-sdk-X.X.X.aar** ,**CDL-X.X.X.aar** and **CDLCore-X.X.X.aar**
+* Add the downloaded SDKs as modules to the project.
 * You can do this by File > New > New Module > Import .JAR/.AAR Package
 * Make sure to include them in the settings.gradle file as well.
 * Build the project and check there are no errors 
@@ -59,22 +51,22 @@ The license is supplied as a JWT text string in a text file. This will need to b
       
 Run the application to display the main window:
 
-![CDL-Windows-Classic-Sample](media/CDL-Android-Sample.jpg)    
+![Android Sample](media/Devices-Android-Sample.jpg)    
 
 * Connect a suitable Wacom device to the PC - for example a Bamboo Slate, Folio or PHU-111 Clipboard
 * Click [Scan for Devices]
 * A list of available devices will be displayed
-* Select the device name to connect to the CDL device 
+* Select the device name to connect to the device 
 * Select [Real Time Ink] to display the pen trace in real-time or [Transfer File] to transfer ink documents from the device.
 
 
-# Common Device Library Demo Application
+# Demo Application
 
 ## 1. Scan, Connect and Get Properties
 
 ### 1.1 Initialize License
 
-You will need a valid license, issued for your application and having the needed features enabled in order to use CDL. The easiest way to initialize your license is to add it as an asset to your application and then verify it using ```LicenseBootstrap```.
+You will need a valid license, issued for your application and having the needed features enabled in order to use the SDK. The easiest way to initialize your license is to add it as an asset to your application and then verify it using ```LicenseBootstrap```.
 
 ```java
 AssetManager assetManager = getAssets();
@@ -152,7 +144,7 @@ inkDevice.connect(inkDeviceInfo, appId, new ConnectionCallback() {
 
 ### 1.5. Device Services
 
-There are certain things that each Wacom Ink Device can do and in the most cases they differ from one to another. In CDL these features are grouped into sets called Device Services. To get the feature sets of the currently connected Ink device you can use the method ```getAvailableDeviceServices()```, which will return a ```List``` of ```DeviceServiceTypes```.    
+There are certain things that each Wacom Ink Device can do and in the most cases they differ from one to another. In the SDK these features are grouped into sets called Device Services. To get the feature sets of the currently connected Ink device you can use the method ```getAvailableDeviceServices()```, which will return a ```List``` of ```DeviceServiceTypes```.    
 
 ```java
 ArrayList<DeviceServiceType> availableDeviceServices = inkDevice.getAvailableDeviceServices();
