@@ -1,10 +1,10 @@
 # Wacom Ink SDK for devices - Android
 
-## Introduction to CDL - Android
+## Introduction
 
 ---
 
-The *Common Device Library* (CDL) is supplied as a single library that can handle different types of pen or touch input from Wacom and third-party devices.
+The Wacom Ink SDK for devices incorporates the *Common Device Library* (CDL) supplied as a single library that can handle different types of pen or touch input from Wacom and third-party devices.
 The benefits of using the CDL include:
 
 * Less implementation effort for developers: integration of a single library gives support for a range of input devices
@@ -53,10 +53,10 @@ To view operation of the CDL diagrammatically:
 
 ---
 
-To illustrate the CDL, the samples which follow are taken from the Android version of the CDL SDK. A similar approach is followed on all platforms where sample projects are supplied as part of the CDL SDK.
+To illustrate the Wacom Ink SDK for devices, the samples which follow are taken from the Android version of the SDK. A similar approach is followed on all platforms where sample projects are supplied as part of the SDK.
 
 ### 1. Initialize License
-You will need a CDL license, issued for your application. The easiest way to initialize your license is to add it as an asset to your application and then verify it using ```LicenseBootstrap```.
+You will need a Wacom Ink SDK for devices license, issued for your application. The easiest way to initialize your license is to add it as an asset to your application and then verify it using ```LicenseBootstrap```.
 
 ```java
 AssetManager assetManager = getAssets();
