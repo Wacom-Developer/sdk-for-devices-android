@@ -292,7 +292,7 @@ As you can see, there are three callbacks through which you can receive data in 
 **WILL SDK for Ink** provides a 2D drawing engine which focuses primarily on inking. It uses OpenGL 2.0 (or newer) and is compatible with the Android OS, which uses EGL/OpenGL for 2D/3D graphics rendering.
 A WILL **InkCanvas** can be bound to either an Android ```SurfaceView``` or an Android ```TextureView```. In this example we will use a SurfaceView, as this option offers superior performance during compositing. For more information on the Android Graphics architecture, see the official Android documentation.
 **Note** for more in-depth examples of Will Ink Rendering, see the documentation and samples:  
-[WILL SDK for Ink - Rendering](http://will-docs.westeurope.cloudapp.azure.com/sdk-for-ink/docs/2.0.0/rendering)
+[WILL SDK for Ink - Rendering](http://developer-docs.wacom.com/sdk-for-ink/docs/2.0.0/rendering)
 
 
 ###  Step 1: Setting up the Ink Engine - SurfaceView
