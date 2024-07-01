@@ -13,9 +13,9 @@ To test the application use a Wacom device such as a Bamboo Slate, Folio, Intuos
 Download the SDK from https://developer.wacom.com/developer-dashboard
 
 * login using your Wacom ID
-* Select **Downloads for devices**
-* Download **Wacom Ink SDK for devices for Android**
-* Accept the End User License Agreement to use the SDK
+* Navigate to **Downloads for devices**
+* Select **More info** on **Wacom Ink SDK for devices for Android**
+* Accept the End User License Agreement and select **Download** to use the SDK
 
 ## Download an Evaluation License
 
